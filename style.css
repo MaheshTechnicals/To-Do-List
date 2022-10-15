@@ -1,0 +1,60 @@
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  background: lightblue;
+  color: black;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#addnote {
+  padding: 5px 10px;
+  color: white;
+  background: black;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+table {
+  border: 2px solid black;
+  width: 100%;
+}
+
+tr td {
+  border: 2px solid black;
+  text-align: center;
+  padding: 5px;
+
+}
+
+th {
+  border: 2px solid black;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+.fa-trash {
+  color: red;
+}
+
+.fa-pen-to-square {
+  color: blue;
+}
