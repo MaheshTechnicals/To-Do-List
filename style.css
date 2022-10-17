@@ -110,10 +110,20 @@ th {
 h1 {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 20px;
-
+  padding: 10px;
+  color: white;
+  font-weight: bold;
 }
 
 
 #text {
   text-align: left;
+}
+
+
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(36, 50, 106, 1) 52%, rgba(16, 114, 230, 1) 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
 }
