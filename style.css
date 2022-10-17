@@ -30,10 +30,6 @@ input {
   font-size: 18px;
 }
 
-table {
-  border: 2px solid black;
-  width: 100%;
-}
 
 tr td {
   border: 2px solid black;
@@ -48,13 +44,5 @@ th {
   padding: 5px;
   font-size: 20px;
   padding: 10px;
-}
 
-
-.fa-trash {
-  color: red;
-}
-
-.fa-pen-to-square {
-  color: blue;
 }
