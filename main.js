@@ -1,5 +1,6 @@
 let input = document.querySelector("input")
 let addnote = document.getElementById("addnote")
+let save = document.getElementById("save")
 
 
 addnote.addEventListener("click", () => {
@@ -7,7 +8,7 @@ addnote.addEventListener("click", () => {
   inputVal = input.value
 
   if (inputVal.trim() != 0) {
-    input.style.border="none"
+    input.style.border = "none"
     let get = localStorage.getItem(JSON.parse(1))
 
     if (get == null) {
@@ -27,9 +28,9 @@ addnote.addEventListener("click", () => {
 
   }
 
-else{
-  input.style.border="2px solid red"
-} 
+  else {
+    input.style.border = "2px solid red"
+  }
 
 
   show()
@@ -63,11 +64,12 @@ let show = () => {
     insert += `<tr>
             <td>${index+1}</td>
             <td>${item}</td>
-            <td><i class="fa-solid fa-pen-to-square"></i></td>
+            <td onClick="edit(${index})"><i class="fa-solid fa-pen-to-square"></i></td>
             <td><i class="fa-solid fa-trash"></i></td>
           </tr>`
 
     table.innerHTML = insert
+
   })
 
 
@@ -75,3 +77,28 @@ let show = () => {
 }
 
 show()
+
+
+// Edit function.
+
+let edit = (index) => {
+  let get = localStorage.getItem(JSON.parse(1))
+
+  data = JSON.parse(get)
+
+  input.value = data[index]
+
+  addnote.style.display = "none"
+  save.style.display = "block"
+
+
+  save.addEventListener("click", () => {
+
+  })
+
+
+
+
+
+
+}
