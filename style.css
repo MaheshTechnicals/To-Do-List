@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100&family=Roboto:ital,wght@1,900&display=swap');
+
+
+
+
 #main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 10px;
+  margin-top: 20px;
+
+
 }
 
 #search {
@@ -11,15 +19,21 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  background: black;
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 input {
   padding: 10px;
   border: none;
-  background: lightblue;
-  color: black;
+  background: black;
+  color: white;
   border-radius: 10px;
   margin-right: 10px;
+  font-style: italic;
+  outline: none;
 }
 
 #addnote {
@@ -29,25 +43,33 @@ input {
   border-radius: 10px;
   font-size: 18px;
   cursor: pointer;
+  border: none;
+
 
 }
 
 
 tr td {
-  border: 2px solid black;
+  border: 1px solid white;
   text-align: center;
   padding: 5px;
   font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+
+
 
 }
 
 th {
-  border: 2px solid black;
+  border: 1px solid white;
   text-align: center;
   padding: 5px;
   font-size: 15px;
   padding: 10px;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+
+  color: yellow !important;
 
 }
 
@@ -59,6 +81,8 @@ th {
   color: limegreen;
   display: none;
   cursor: pointer;
+  border: none;
+
 }
 
 
@@ -73,10 +97,18 @@ th {
   display: none;
   font-weight: bold;
   cursor: pointer;
+  font-family: 'Roboto', sans-serif;
 
 }
 
 
 .fa-circle-xmark {
   margin-right: 5px;
+}
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+
 }
