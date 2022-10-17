@@ -64,7 +64,7 @@ let show = () => {
 
     insert += `<tr>
             <td>${index+1}</td>
-            <td>${item}</td>
+            <td id="text">${item}</td>
             <td onClick="edit(${index})"><i class="fa-solid fa-pen-to-square"></i></td>
             <td onClick="del(${index})"><i class="fa-solid fa-trash"></i></td>
           </tr>`
