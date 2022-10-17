@@ -34,7 +34,8 @@ addnote.addEventListener("click", () => {
 
 
   show()
-
+  removeAll()
+  input.value = ""
 })
 
 
@@ -65,7 +66,7 @@ let show = () => {
             <td>${index+1}</td>
             <td>${item}</td>
             <td onClick="edit(${index})"><i class="fa-solid fa-pen-to-square"></i></td>
-            <td><i class="fa-solid fa-trash"></i></td>
+            <td onClick="del(${index})"><i class="fa-solid fa-trash"></i></td>
           </tr>`
 
     table.innerHTML = insert
@@ -82,6 +83,7 @@ show()
 // Edit function.
 
 let edit = (index) => {
+  let saveindex = index
   let get = localStorage.getItem(JSON.parse(1))
 
   data = JSON.parse(get)
@@ -92,7 +94,25 @@ let edit = (index) => {
   save.style.display = "block"
 
 
+
+
+
   save.addEventListener("click", () => {
+
+    let get = localStorage.getItem(JSON.parse(1))
+
+    data = JSON.parse(get)
+
+    data[saveindex] = input.value
+    save.style.display = "none"
+    addnote.style.display = "block"
+    input.value = ""
+    localStorage.setItem(1, JSON.stringify(data))
+
+    show()
+
+    location.reload()
+
 
   })
 
@@ -102,3 +122,57 @@ let edit = (index) => {
 
 
 }
+
+
+
+
+
+
+// Delete function
+
+let del = (index) => {
+  let get = localStorage.getItem(JSON.parse(1))
+  data = JSON.parse(get)
+
+  data.splice(index, 1)
+
+  localStorage.setItem(1, JSON.stringify(data))
+
+  location.reload()
+
+
+
+}
+
+
+
+
+// delete all check function
+
+let removeAll = () => {
+  if (data == "") {
+
+  }
+
+  else {
+    let removeAllBtn = document.getElementById("removeAll")
+
+    removeAllBtn.style.display = "block"
+
+    removeAllBtn.addEventListener("click", () => {
+
+
+
+
+
+    })
+
+
+
+
+  }
+
+}
+
+
+removeAll()

@@ -56,3 +56,15 @@ th {
   color: limegreen;
   display: none;
 }
+
+
+#removeAll{
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center ;
+  border-radius: 10px;
+  display: none;
+  
+} 
