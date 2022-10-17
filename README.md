@@ -10,7 +10,7 @@
 <li style="margin: 10px;">You will get your notes after page refresh as well.</li>
 <li style="margin: 10px;">We have edit notes functionality.</li>
 <li style="margin: 10px;">We have delete functionality.</li>
-<li style="margin: 10px;">Simple & rwsponsive design.</li>
+<li style="margin: 10px;">Simple & responsive design.</li>
 <li style="margin: 10px;">Delete All At once functionality.</li>
 
 
