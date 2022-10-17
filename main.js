@@ -161,9 +161,14 @@ let removeAll = () => {
 
     removeAllBtn.addEventListener("click", () => {
 
+      let get = localStorage.getItem(JSON.parse(1))
+      data = JSON.parse(get)
 
+      data = []
 
+      localStorage.setItem(1, JSON.stringify(data))
 
+      location.reload()
 
     })
 
