@@ -2,7 +2,7 @@ let input = document.querySelector("input")
 let addnote = document.getElementById("addnote")
 let save = document.getElementById("save")
 
-
+// Add Notes Button.
 addnote.addEventListener("click", () => {
 
   inputVal = input.value
@@ -25,7 +25,6 @@ addnote.addEventListener("click", () => {
     let set = localStorage.setItem(1, JSON.stringify(data))
 
 
-
   }
 
   else {
@@ -39,6 +38,10 @@ addnote.addEventListener("click", () => {
 })
 
 
+
+
+
+// Show Function 
 
 let show = () => {
 
@@ -73,8 +76,6 @@ let show = () => {
 
   })
 
-
-
 }
 
 show()
@@ -96,7 +97,7 @@ let edit = (index) => {
 
 
 
-
+  // Save Button Action.
   save.addEventListener("click", () => {
 
     let get = localStorage.getItem(JSON.parse(1))
@@ -115,11 +116,6 @@ let edit = (index) => {
 
 
   })
-
-
-
-
-
 
 }
 
@@ -172,12 +168,8 @@ let removeAll = () => {
 
     })
 
-
-
-
   }
 
 }
-
 
 removeAll()
