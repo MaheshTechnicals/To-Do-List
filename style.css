@@ -41,7 +41,7 @@ input {
   color: white;
   background: black;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 30px;
   cursor: pointer;
   border: none;
 
@@ -76,7 +76,7 @@ th {
 #save {
   padding: 5px 10px;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 30px;
   background: black;
   color: limegreen;
   display: none;
